@@ -1,0 +1,35 @@
+/* Body */
+body{
+    height: 100%;
+    background-color: lightgrey;
+}
+/*IMG*/
+img.displayed {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+/* Slideshow */
+* {
+    box-shadow: border-box
+}
+.mySlides {
+    display: none;
+}
+/* SlideShow Container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+/* Caption Text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    top
+}
