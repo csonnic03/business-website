@@ -4,6 +4,10 @@ body{
     background-color: lightgrey;
 }
 /*IMG*/
+img{
+    width: 500px;
+    height: 200px;
+}
 img.displayed {
     position: absolute;
     top: 20%;
@@ -13,16 +17,19 @@ img.displayed {
 }
 /* Slideshow */
 * {
-    box-shadow: border-box
+    box-shadow: border-box;
+    position: relative;
+    top: 25px;
 }
-.mySlides {
+#mySlides {
     display: none;
 }
 /* SlideShow Container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 500px;
     position: relative;
     margin: auto;
+    left: 13px;
 }
 /* Caption Text */
 .text {
@@ -31,5 +38,43 @@ img.displayed {
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
-    top
+    width: 100%;
+    text-align: center;
+}
+/*Number Text (1/3) */
+.numberText {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0px;
+}
+/*Dots*/
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6 ease;
+}
+.active .dot:hover{
+    background-color: #717171;
+}
+/*Fading Animation*/
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: 0.4}
+    to{opacity: 1}
+}
+@keyframes fade{
+    from {opacity: 0.4}
+    to{opacity: 1}
 }
